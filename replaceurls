@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+for file in `find haddock -name '*.html'`; do
+    sed -i 's/file:\/\/\/usr\/share\/doc\/ghc-doc\/html\/libraries\/base-4.8.2.0/https:\/\/hackage.haskell.org\/package\/base-4.8.2.0\/docs/g' $file
+done
