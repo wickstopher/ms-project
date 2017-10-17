@@ -1,3 +1,4 @@
 #! /usr/bin/env bash
 
-cp -r ~/.cabal/share/doc/x86_64-linux-ghc-7.10.3/ haddock
+cp -r ~/.cabal/share/doc/x86_64-linux-ghc-7.10.3/* haddock/
+./replaceurls
